@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <style>
+        body{
+            background-color: #add8e6;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header{
+            background-color: #0077b6;
+            color: black;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+            position: fixed;
+            width: 100%;
+        }
+        header h1{
+            margin: 0;
+        }
+        main{
+            margin-top: 120px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        h2{
+            color: black;
+        }
+        ul{
+            color: black;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        code{
+            background-color: #023e8a;
+            color: black;
+            padding: 10px;
+            display: block;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>java script basics</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction to JS</h2>
+            <ul>
+                <li>JavaScript is a high level interpreted programming language</li>
+                <li>Used to make web pages interactive and dynamic</li>
+            </ul>
+
+            <h2>What JavaScript can do?</h2>
+            <ul>
+                <li>Show alerts and messages</li>
+                <li>Manipulate HTML and CSS content</li>
+                <li>Handle events like clicks and form submissions</li>
+                <li>Call APIs</li>
+                <li>Validate user input</li>
+                <li>Build full applications</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Variables</h2>
+            <ul>
+                <li>Used to store data values</li>
+                <li>Declared using var, let, or const</li>
+                <li>var is function-scoped</li>
+                <li>let and const are block-scoped</li>
+                <li>const cannot be reassigned</li>
+            </ul>
+
+            <h3>Example for var</h3>
+            <code>
+var x = 10;
+x = 50;
+var x = 40;
+console.log(x);
+            </code>
+
+            <h3>Example for let</h3>
+            <code>
+let y = 10;
+y = 50;
+console.log(y);
+            </code>
+
+            <h3>Example for const</h3>
+            <code>
+const z = 10;
+console.log(z);
+            </code>
+        </section>
+
+        <section>
+            <h2>Data Types</h2>
+            <ul>
+                <li>Primitive: String, Number, Boolean, Null, Undefined, Symbol</li>
+                <li>Non-Primitive: Object, Array, Function</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Array Methods</h2>
+            <ul>
+                <li>push()</li>
+                <li>pop()</li>
+                <li>shift()</li>
+                <li>unshift()</li>
+                <li>map()</li>
+                <li>filter()</li>
+                <li>reduce()</li>
+            </ul>
+
+            <h3>Example</h3>
+            <code>
+let arr = [1,2,3,4,5];
+let sum = arr.reduce((a,b) => a+b, 0);
+console.log(sum);
+            </code>
+        </section>
+
+        <section>
+            <h2>Functions</h2>
+            <ul>
+                <li>Function Declaration</li>
+                <li>Function Expression</li>
+                <li>Arrow Function</li>
+            </ul>
+
+            <h3>Arrow Function Example</h3>
+            <code>
+const add = (a,b) => a + b;
+console.log(add(5,3));
+            </code>
+        </section>
+    </main>
+</body>
+</html>
