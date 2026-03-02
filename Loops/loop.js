@@ -1,25 +1,25 @@
-// const a = 5
+const a = 5
 
-// for(i=1;i<=a;i++){
+for(i=1;i<=a;i++){
 
-//     var b=''
+    var b=''
 
-//     for(j=1;j<=i;j++){
-//      b+='* '
-//     }
-//     console.log(b)
-// }
+    for(j=1;j<=i;j++){
+     b+='* '
+    }
+    console.log(b)
+}
 
-// const d = [1,2,3]
-// let c= []
+const d = [1,2,3]
+let c= []
 
-// for(i=0;i< d.length;i++){
+for(i=0;i< d.length;i++){
    
-//    c.push(d[i]*2)
+   c.push(d[i]*2)
     
-// }
+}
 
-// console.log(c)
+console.log(c)
 
 const data = ['raghu', 'ram','ravi','athi']
 
@@ -45,15 +45,20 @@ const final = values.reduce((a,b)=> a+b)
 
 console.log(final)
 
-let a = 1;
+let e = 1;
 
 for(let i=0;i< values.length;i++){
     
-    a*= values[i]
+    e+= values[i]
 
 }
-console.log(a)
+console.log(e)
+
+for(let i=0;i< 5;i++){
+    
+   
+
+}
 
 
-
-
+console.log(Math.sqrt(9))
