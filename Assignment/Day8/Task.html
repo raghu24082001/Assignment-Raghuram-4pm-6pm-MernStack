@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <button id="inc">+</button>
+      <p id="ans">0</p>
+      <button id="dec">-</button> <br>
+      <br>
+      <button id="Res">Reset</button>
+
+      <input type="text" id="text">
+      <br>
+      <br>
+      <button id="show">Show</button>
+
+      <ul id="list"></ul>
+      
+      <script>
+           
+           document.getElementById('inc').addEventListener('click',()=>{
+             let addi = parseInt(document.getElementById('ans').innerHTML)
+             addi++ 
+              document.getElementById('ans').innerHTML = addi;
+           })
+
+           document.getElementById('dec').addEventListener('click',()=>{
+             let subi = parseInt(document.getElementById('ans').innerHTML)
+             subi-- 
+              document.getElementById('ans').innerHTML = subi;
+           })
+
+           document.getElementById('Res').addEventListener('click',()=>{
+             document.getElementById('ans').innerHTML = 0;
+           })
+
+           document.getElementById('show').addEventListener('click',()=>{
+             const data = document.createElement('li')
+             data.innerText = document.getElementById('text').value
+             const newBut = document.getElementById('list')
+             const data1 = document.createElement('button')
+             data1.innerHTML = 'Delete'
+             data1.addEventListener('click', () => {
+              data.remove(); })
+
+             newBut.appendChild(data)
+             data.appendChild(data1)
+
+           })
+           
+
+      </script>
+</body>
+</html>
