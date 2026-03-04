@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-      <button id="inc">+</button>
+      <div id="color"> 
+        <button id="inc">+</button>
       <p id="ans">0</p>
       <button id="dec">-</button> <br>
       <br>
@@ -16,8 +17,12 @@
       <br>
       <br>
       <button id="show">Show</button>
-
+      
       <ul id="list"></ul>
+      <br>
+      <br>
+      <button onclick="changeColor()" ondblclick="changeColorBack()">Change color</button>
+      </div>
       
       <script>
            
@@ -50,6 +55,20 @@
              data.appendChild(data1)
 
            })
+
+           function changeColor(){
+              const changeColor = document.getElementById('color')
+              changeColor.style.backgroundColor= 'blue'
+           }
+
+           function changeColorBack(){
+              const changeColor = document.getElementById('color')
+              changeColor.style.backgroundColor= ''
+           }
+
+
+
+
            
 
       </script>
