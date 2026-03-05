@@ -1,0 +1,22 @@
+.box1{
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box2{
+  display: flex;
+   gap: 10px;
+}
+
+.box2 a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+
+.box2 a:hover{
+  transform: translateY(-5px);
+  
+}
