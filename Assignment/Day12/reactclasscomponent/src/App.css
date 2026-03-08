@@ -1,0 +1,38 @@
+.box1{
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box2{
+  display: flex;
+   gap: 10px;
+}
+
+.box2 a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+
+.box2 a:hover{
+  transform: translateY(-5px);
+  
+}
+
+.box3{
+  background-color: lightcoral;
+  height:100px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.box4{
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
