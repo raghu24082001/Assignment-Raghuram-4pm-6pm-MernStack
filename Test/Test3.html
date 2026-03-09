@@ -1,0 +1,164 @@
+What is rendering in React and how does React render JSX to the screen?
+
+Rendering means displayiing UI componentsin screen based on component.
+we write code in jsx format. react converts into javascript object by using babble method.
+react made change using virtual dom and update necessary part in virtual dom.
+
+JSX is converted into React.createElement().
+
+2. How can you render a JavaScript variable inside JSX?
+  we need to use curly braces{}.
+
+const App()=>{
+    const data = 'raghu'
+    return(
+        <>
+        <h1>{data}</h1>
+        </>
+    )
+}
+
+3.How do you render an object’s properties in a React component?
+
+const App()=>{
+    const data = {
+        name: 'raghu'
+    }
+    return(
+        <>
+        <h1>{data.name}</h1>
+        </>
+    )
+}
+
+4.How can you render an array of values in React?
+
+const App()=>{
+    const fruits = ["Apple", "Banana", "Mango"];
+
+    return(
+        <>
+        {fruits.map((fruit) => (
+        <li>{fruit}</li>
+      ))}
+        </>
+    )
+}
+
+5.How do you render an array of objects using .map() in React?
+
+const Content = () => {
+      const dataNew = [{name:'Raghuram',
+                        age:24,
+                        skills:['Mern','React','Node']},
+                    {name:'Ravi',
+                        age:31,
+                        skills:['Docker','python','Node']},
+                    {name:'Athi',
+                        age:20,
+                        skills:['Java','Springboot','Node']}]
+      
+      const dataIsThere = true 
+                       
+  return (
+    <>
+       { dataIsThere ? <div class='p-10 flex gap-20 justify-between'>
+         {dataNew.map((e,I)=>(
+            <div key={I} class='bg-red-300 p-10 rounded ' >
+                <p>Name:{e.name}</p>
+                <p>Age:{e.age}</p>
+                <p>Skills:{e.skills.map((j,k)=>(
+                <span key={k}> {j} |</span>
+                ))}</p>
+            </div>
+         ))}
+
+       </div> : <h3 class='bg-red-300 text-center'>There is no data </h3>}
+    </>
+  )
+}
+
+6.Why is the key prop important when rendering lists in React?
+key shows unique to the values. Also we get value by using key.
+each value has a unique key.
+
+7.How do you render nested arrays in React?
+
+const Content = () => {
+      const dataNew = [{name:'Raghuram',
+                        age:24,
+                        skills:['Mern','React','Node']},
+                    {name:'Ravi',
+                        age:31,
+                        skills:['Docker','python','Node']},
+                    {name:'Athi',
+                        age:20,
+                        skills:['Java','Springboot','Node']}]
+      
+      const dataIsThere = true 
+                       
+  return (
+    <>
+       { dataIsThere ? <div class='p-10 flex gap-20 justify-between'>
+         {dataNew.map((e,I)=>(
+            <div key={I} class='bg-red-300 p-10 rounded ' >
+                <p>Name:{e.name}</p>
+                <p>Age:{e.age}</p>
+                <p>Skills:{e.skills.map((j,k)=>(
+                <span key={k}> {j} |</span>
+                ))}</p>
+            </div>
+         ))}
+
+       </div> : <h3 class='bg-red-300 text-center'>There is no data </h3>}
+    </>
+  )
+}
+
+8.What is conditional rendering in React and how can it be implemented?
+ Render the UI based on Condition.
+ if else statement
+ Ternary operator
+ && operator
+ Switch
+
+ 9.How does the ternary operator work in React JSX for rendering different UI based on a condition?
+
+ const Content = () => {
+      const dataNew = [{name:'Raghuram',
+                        age:24,
+                        skills:['Mern','React','Node']},
+                    {name:'Ravi',
+                        age:31,
+                        skills:['Docker','python','Node']},
+                    {name:'Athi',
+                        age:20,
+                        skills:['Java','Springboot','Node']}]
+      
+      const dataIsThere = true 
+                       
+  return (
+    <>
+       { dataIsThere ? <div class='p-10 flex gap-20 justify-between'>
+         {dataNew.map((e,I)=>(
+            <div key={I} class='bg-red-300 p-10 rounded ' >
+                <p>Name:{e.name}</p>
+                <p>Age:{e.age}</p>
+                <p>Skills:{e.skills.map((j,k)=>(
+                <span key={k}> {j} |</span>
+                ))}</p>
+            </div>
+         ))}
+
+       </div> : <h3 class='bg-red-300 text-center'>There is no data </h3>}
+    </>
+  )
+}
+ 10.What is the difference between using && logical rendering and the ternary operator in React?
+
+ && logical rendering only show the right side value in UI if left side is true.
+ if left side is false it doesn,t show anything.
+
+ Ternary operator. is similar to if else statement we used this for conditional rendering.
+ it can show value based on condition. condition will either true or false.
+
