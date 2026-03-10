@@ -16,6 +16,7 @@ const Content = () => {
   return (
     <>
        { dataIsThere ? <div class='p-10 flex gap-20 justify-between'>
+        
          {dataNew.map((e,I)=>(
             <div key={I} class='bg-red-300 p-10 rounded ' >
                 <p>Name:{e.name}</p>
@@ -23,7 +24,7 @@ const Content = () => {
                 <p>Skills:{e.skills.map((j,k)=>(
                 <span key={k}> {j} |</span>
                 ))}</p>
-            </div>
+            </div> 
          ))}
 
        </div> : <h3 class='bg-red-300 text-center'>There is no data </h3>}
