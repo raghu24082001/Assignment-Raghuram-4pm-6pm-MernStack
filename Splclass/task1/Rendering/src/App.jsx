@@ -42,12 +42,6 @@ const App = () => {
   const age = 17
   const isAdmin = true
 
-  const user = {
-    address: {
-      city: "Chennai"
-    }
-  }
-
   const username = null
 
   return (
@@ -113,11 +107,6 @@ const App = () => {
       <div>
         <h3>Logical AND Rendering</h3>
         {isAdmin && <p>Admin Dashboard</p>}
-      </div>
-
-      <div>
-        <h3>Optional Chaining</h3>
-        <p>City: {user?.address?.city}</p>
       </div>
 
       <div>
