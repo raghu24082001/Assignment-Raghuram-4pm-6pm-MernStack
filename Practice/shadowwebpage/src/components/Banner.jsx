@@ -9,6 +9,8 @@ import Usenavigator from './usenavigator'
 import Login from './Login'
 import Layout from '../layout/Layout'
 
+import Useurlparam from './Useurlparam'
+
 
 const Banner = () => {
   return (
@@ -20,6 +22,7 @@ const Banner = () => {
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Help' element={<Help/>}/>
         <Route path='/Usenavi' element={<Usenavigator/>}/>
+        <Route path='/param/:productid' element={<Useurlparam/>}/>
         </Route>
         <Route path='/Login' element={<Login/>}/>
      </Routes>
