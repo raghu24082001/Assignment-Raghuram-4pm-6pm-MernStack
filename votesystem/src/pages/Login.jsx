@@ -24,7 +24,7 @@ const Login = ({ voters, setCurrentVoter }) => {
   return (
     <div className="h-screen flex flex-col items-center justify-center">
       <input
-        placeholder="Voter ID"
+        placeholder="Voter"
         className="border p-2 m-2 rounded"
         onChange={(e) => setVoterId(e.target.value)}
       />
