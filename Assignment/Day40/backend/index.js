@@ -23,3 +23,19 @@ app.listen(PORT,()=>{
 })
 
 //http://localhost:5000/api/user
+
+// Common model-based methods:
+
+// Model.create()  -> create new document
+// Model.find()    -> get multiple documents
+// Model.findOne() -> get a single document
+// Model.findById() -> get document by ID
+
+// Model.updateOne()  -> update a single document
+// Model.updateMany() -> update multiple documents
+
+// Model.deleteOne()  -> delete a single document
+// Model.deleteMany() -> delete multiple documents
+// Model.findByIdAndDelete() -> delete by ID
+
+// Model.findByIdAndUpdate() -> update by ID

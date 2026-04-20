@@ -29,6 +29,6 @@ const dataschema = new mongoose.Schema({
 
 },{timestamps:true})
 
-const newmodaldata = mongoose.model("userAuth",dataschema)
+const newmodaldata = mongoose.model("Netflixdata",dataschema)
 
 export default newmodaldata
