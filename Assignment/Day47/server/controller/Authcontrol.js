@@ -60,3 +60,22 @@ export const logindata =  async (req,res) =>{
         res.status(400).json({msg:"something error occured"})
     }
 }
+
+export const getDashBoardInfo = async (req,res)=>{
+
+    //console.log(req);
+
+    try {
+
+        res.status(200).json({Users:req.users})
+        
+    } catch (error) {
+
+        console.log('error',error);
+        
+        
+        
+    }
+    
+
+}
